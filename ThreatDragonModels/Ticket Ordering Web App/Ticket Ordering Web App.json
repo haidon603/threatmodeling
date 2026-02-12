@@ -286,7 +286,7 @@
           },
           {
             "position": {
-              "x": 566.25,
+              "x": 570,
               "y": 340
             },
             "size": {
@@ -805,8 +805,8 @@
                 "text": "Customer"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -903,9 +903,27 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "e5830fd1-741d-4e75-82db-b7b6060158ef",
+                  "title": "Account Compromised",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -1077,6 +1095,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 7
+    "threatTop": 8
   }
 }
