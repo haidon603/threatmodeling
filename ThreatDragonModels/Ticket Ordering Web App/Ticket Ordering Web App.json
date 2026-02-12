@@ -28,8 +28,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "90e4eabe-4cf9-46c5-87cb-5dac479b0cf9",
             "zIndex": -1,
+            "id": "90e4eabe-4cf9-46c5-87cb-5dac479b0cf9",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -38,7 +38,8 @@
               "hasOpenThreats": false,
               "crossingFlows": [
                 "bf7ea2bc-b54c-4525-894f-1600963b3034",
-                "a0f8aef4-7665-469d-ae35-d4d248e24fa5"
+                "a0f8aef4-7665-469d-ae35-d4d248e24fa5",
+                "26c4588d-9375-465b-b778-d1f971fb6803"
               ],
               "containedElements": [
                 "4a0c17f8-8fb2-493e-8c7e-6695d18a38bc",
@@ -67,6 +68,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -150,7 +152,6 @@
               ]
             },
             "id": "2fdf091e-6f50-4cfb-8cf2-2a153e42dc74",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Staff",
@@ -184,6 +185,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -267,7 +269,6 @@
               ]
             },
             "id": "e48fda1a-077a-4370-8d40-bdabe70378aa",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Payment Processing",
@@ -304,6 +305,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -387,7 +389,6 @@
               ]
             },
             "id": "4a0c17f8-8fb2-493e-8c7e-6695d18a38bc",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "Ticket Web App",
@@ -612,6 +613,54 @@
             }
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Create/Read/Update/Delete Tickets",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "90e4eabe-4cf9-46c5-87cb-5dac479b0cf9"
+              ]
+            },
+            "labels": [
+              "Create/Read/Update/Delete Tickets"
+            ],
+            "id": "26c4588d-9375-465b-b778-d1f971fb6803",
+            "source": {
+              "x": 690,
+              "y": 480
+            },
+            "target": {
+              "cell": "d1a660c0-4670-42b1-873b-179b53b20af9",
+              "port": "86b8938a-7d25-4e59-85c7-478e1c92ff1b"
+            }
+          },
+          {
             "position": {
               "x": 330,
               "y": 180
@@ -632,6 +681,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -715,7 +765,6 @@
               ]
             },
             "id": "1c999944-d6a3-4c2e-8192-11c734b830c6",
-            "zIndex": 11,
             "data": {
               "type": "tm.Actor",
               "name": "Customer",
@@ -752,6 +801,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -835,7 +885,6 @@
               ]
             },
             "id": "d1a660c0-4670-42b1-873b-179b53b20af9",
-            "zIndex": 12,
             "data": {
               "type": "tm.Store",
               "name": "Database",
@@ -850,13 +899,6 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           }
         ]
@@ -882,6 +924,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 1
   }
 }
