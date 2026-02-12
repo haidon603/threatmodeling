@@ -298,8 +298,8 @@
                 "text": "Ticket Web App"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -396,12 +396,86 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "5bc60279-d52f-4d27-a355-3d68772a2ff1",
+                  "title": "Insider Threat Modifies Ticket Prices",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                },
+                {
+                  "id": "1bc08ef3-bf94-499d-a898-6fceae606c97",
+                  "title": "Insider Threat Deletes Tickets and Denies Doing so",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Repudiation",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                },
+                {
+                  "id": "0b753c51-95cb-4b8a-8e02-a12599645020",
+                  "title": "Customer accesses other customers ticket account",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                },
+                {
+                  "id": "d56d5ca7-71c6-4691-9d68-cfb1acd62c5f",
+                  "title": "TA overwhelms web app",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                },
+                {
+                  "id": "17a496e3-0bbf-4d5a-b616-635cd0f14e79",
+                  "title": "Customer Accesses Admin Account of WebApp",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Elevation of privilege",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 3,
+                "repudiation": 2,
+                "informationDisclosure": 1,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 1
+              }
             }
           },
           {
@@ -653,29 +727,29 @@
             ],
             "id": "91cd5421-f18f-4856-820d-09f6fe625a89",
             "source": {
-              "x": 50,
-              "y": 140
+              "x": 90,
+              "y": 120
             },
             "target": {
-              "x": 319,
-              "y": 110
+              "x": 359,
+              "y": 90
             },
             "vertices": [
               {
-                "x": 120,
-                "y": 290
-              },
-              {
-                "x": 219,
+                "x": 160,
                 "y": 270
               },
               {
                 "x": 260,
-                "y": 240
+                "y": 270
               },
               {
-                "x": 290,
-                "y": 220
+                "x": 310,
+                "y": 250
+              },
+              {
+                "x": 330,
+                "y": 200
               }
             ]
           },
@@ -710,6 +784,10 @@
               {
                 "x": 1020,
                 "y": 150
+              },
+              {
+                "x": 1190,
+                "y": 470
               }
             ]
           },
@@ -844,11 +922,13 @@
                 "text": "Database"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -945,13 +1025,33 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "21fb3973-9428-4889-904d-29ff6d3acd43",
+                  "title": "User Connects to DB impersonating Staff",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             }
           }
         ]
@@ -977,6 +1077,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 1
+    "threatTop": 7
   }
 }
