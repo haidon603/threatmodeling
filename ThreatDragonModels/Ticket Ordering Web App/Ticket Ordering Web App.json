@@ -61,8 +61,8 @@
                 "text": "Staff"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -159,9 +159,40 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "76406491-bed3-4a8b-b950-bff1d61aa3a5",
+                  "title": "Disgruntled/Personal Grievance",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Repudiation",
+                  "description": "Attempts to abuse access",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                },
+                {
+                  "id": "47101523-2e6d-4852-8067-be2660c2176d",
+                  "title": "Leadership Impesonation",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 2
+              }
             }
           },
           {
@@ -908,7 +939,7 @@
               "threats": [
                 {
                   "id": "e5830fd1-741d-4e75-82db-b7b6060158ef",
-                  "title": "Account Compromised",
+                  "title": "Account Impersonation",
                   "status": "Open",
                   "severity": "Low",
                   "type": "Spoofing",
@@ -921,7 +952,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "repudiation": 0
               }
             }
@@ -1095,6 +1126,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 8
+    "threatTop": 10
   }
 }
