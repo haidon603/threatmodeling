@@ -37,9 +37,9 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "bf7ea2bc-b54c-4525-894f-1600963b3034",
                 "a0f8aef4-7665-469d-ae35-d4d248e24fa5",
-                "26c4588d-9375-465b-b778-d1f971fb6803"
+                "26c4588d-9375-465b-b778-d1f971fb6803",
+                "bf7ea2bc-b54c-4525-894f-1600963b3034"
               ],
               "containedElements": [
                 "4a0c17f8-8fb2-493e-8c7e-6695d18a38bc",
@@ -49,8 +49,8 @@
           },
           {
             "position": {
-              "x": 620,
-              "y": 60
+              "x": 630,
+              "y": 70
             },
             "size": {
               "width": 112.5,
@@ -286,8 +286,8 @@
           },
           {
             "position": {
-              "x": 590,
-              "y": 350
+              "x": 566.25,
+              "y": 340
             },
             "size": {
               "width": 220,
@@ -413,60 +413,6 @@
                   "name": "block"
                 },
                 "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Select and Order Tickets",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "90e4eabe-4cf9-46c5-87cb-5dac479b0cf9"
-              ]
-            },
-            "labels": [
-              "Select and Order Tickets"
-            ],
-            "id": "bf7ea2bc-b54c-4525-894f-1600963b3034",
-            "source": {
-              "x": 398,
-              "y": 250
-            },
-            "target": {
-              "cell": "4a0c17f8-8fb2-493e-8c7e-6695d18a38bc",
-              "port": "56d695f8-69b6-4631-981b-e3af9e195032"
-            },
-            "vertices": [
-              {
-                "x": 520,
-                "y": 360
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
                   "name": ""
                 },
                 "strokeDasharray": null
@@ -508,6 +454,10 @@
             "vertices": [
               {
                 "x": 630,
+                "y": 170
+              },
+              {
+                "x": 590,
                 "y": 200
               },
               {
@@ -561,56 +511,12 @@
               "x": 1120,
               "y": 230
             },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            "vertices": [
+              {
+                "x": 1090,
+                "y": 400
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -661,9 +567,156 @@
             }
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Select and Order Tickets",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "90e4eabe-4cf9-46c5-87cb-5dac479b0cf9",
+                "91cd5421-f18f-4856-820d-09f6fe625a89"
+              ]
+            },
+            "labels": [
+              "Select and Order Tickets"
+            ],
+            "id": "bf7ea2bc-b54c-4525-894f-1600963b3034",
+            "source": {
+              "cell": "1c999944-d6a3-4c2e-8192-11c734b830c6",
+              "port": "14782768-d29b-4671-9e2e-0087967a6be3"
+            },
+            "target": {
+              "cell": "4a0c17f8-8fb2-493e-8c7e-6695d18a38bc",
+              "port": "56d695f8-69b6-4631-981b-e3af9e195032"
+            },
+            "vertices": [
+              {
+                "x": 240,
+                "y": 340
+              },
+              {
+                "x": 350,
+                "y": 340
+              },
+              {
+                "x": 500,
+                "y": 360
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "bf7ea2bc-b54c-4525-894f-1600963b3034"
+              ],
+              "containedElements": [
+                "1c999944-d6a3-4c2e-8192-11c734b830c6"
+              ]
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "91cd5421-f18f-4856-820d-09f6fe625a89",
+            "source": {
+              "x": 50,
+              "y": 140
+            },
+            "target": {
+              "x": 319,
+              "y": 110
+            },
+            "vertices": [
+              {
+                "x": 120,
+                "y": 290
+              },
+              {
+                "x": 219,
+                "y": 270
+              },
+              {
+                "x": 260,
+                "y": 240
+              },
+              {
+                "x": 290,
+                "y": 220
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "aa9a1ecb-fd84-41e2-9489-872be3824e9c",
+            "source": {
+              "x": 994,
+              "y": 70
+            },
+            "target": {
+              "x": 1280,
+              "y": 600
+            },
+            "vertices": [
+              {
+                "x": 1020,
+                "y": 150
+              }
+            ]
+          },
+          {
             "position": {
-              "x": 330,
-              "y": 180
+              "x": 130,
+              "y": 130
             },
             "size": {
               "width": 112.5,
