@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "0e573489-456a-4e46-9282-09bad318aaef",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Domain Enumeration",
@@ -158,6 +158,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -241,7 +242,6 @@
               ]
             },
             "id": "16e9256a-8676-425e-ad83-51f0a0fec165",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "LDAP",
@@ -275,6 +275,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -358,7 +359,6 @@
               ]
             },
             "id": "312d37c3-6759-48d3-8576-985f5793eaeb",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "Windows APIs",
@@ -395,6 +395,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -478,7 +479,6 @@
               ]
             },
             "id": "cd53c07f-944e-475d-be26-3f2fac11e8c9",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "LOL Bins (net, PS AD modules, systeminfo)",
@@ -516,6 +516,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -599,7 +600,6 @@
               ]
             },
             "id": "88a9e8b4-bb16-450b-a386-0fc076944745",
-            "zIndex": 5,
             "data": {
               "type": "tm.Actor",
               "name": "RPC",
@@ -636,6 +636,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 7,
             "ports": {
               "groups": {
                 "top": {
@@ -719,7 +720,6 @@
               ]
             },
             "id": "fc01d64a-7e37-4340-a4b4-355b26102ad6",
-            "zIndex": 7,
             "data": {
               "type": "tm.Store",
               "name": "rpcclient",
@@ -760,6 +760,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 8,
             "ports": {
               "groups": {
                 "top": {
@@ -843,7 +844,6 @@
               ]
             },
             "id": "79965ac5-5938-44e7-8b43-b31f728298e0",
-            "zIndex": 8,
             "data": {
               "type": "tm.Store",
               "name": "Active Directory Web Services",
@@ -862,8 +862,8 @@
           },
           {
             "position": {
-              "x": 620,
-              "y": 480
+              "x": 1300,
+              "y": 390
             },
             "size": {
               "width": 120,
@@ -884,6 +884,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 9,
             "ports": {
               "groups": {
                 "top": {
@@ -967,7 +968,6 @@
               ]
             },
             "id": "2b4a6bf3-e883-4bf2-a519-2b139f3ee449",
-            "zIndex": 9,
             "data": {
               "type": "tm.Store",
               "name": "NetUserEnum",
@@ -986,8 +986,8 @@
           },
           {
             "position": {
-              "x": 462.5,
-              "y": 480
+              "x": 1142.5,
+              "y": 390
             },
             "size": {
               "width": 120,
@@ -1008,6 +1008,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 10,
             "ports": {
               "groups": {
                 "top": {
@@ -1091,7 +1092,6 @@
               ]
             },
             "id": "8271154f-1123-4bf0-87bc-22c197334c4f",
-            "zIndex": 10,
             "data": {
               "type": "tm.Store",
               "name": "ImpersonateLoggedOnUser",
@@ -1106,6 +1106,173 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "d93b2956-b172-4203-8dfe-63a97946fd9e",
+            "source": {
+              "x": 1023,
+              "y": 310
+            },
+            "target": {
+              "x": 1123,
+              "y": 410
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "e86c25ef-5e4c-4dca-a30b-d5230963db67",
+            "source": {
+              "x": 1093,
+              "y": 270
+            },
+            "target": {
+              "cell": "2b4a6bf3-e883-4bf2-a519-2b139f3ee449",
+              "port": "b43c202b-4705-4e42-b090-d13632bbd800"
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
             }
           }
         ]
